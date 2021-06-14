@@ -3,91 +3,44 @@
 ================================================== */
 
 .header__main {
-width: auto;
-height: 100vh;
-background-image: url('/src/images/content/man-bg.jpg');
-background-repeat: no-repeat;
-background-position: 50% 0;
-background-size: 50%;
+  width: auto;
+  height: 100vh;
+  background-image: url("/src/images/content/man-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 50%;
 
-display: flex;
-
-
-  &--sidebar{
-    width: 5.45%;
-    // height: 100%;
-    border-right:1px solid hsla(0, 0%, 100%, 0.295);
-    // overflow: hidden;
+  .header__maincontent {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: auto;
+    width: 100%;
 
-    .sidebar__btn{
-      width:fit-content;
-      background: hsl(0, 0%, 28%);
-      border: none;
-      height:5%;
-      position: relative;
-
-      .sidebar-burger{
-        width: 40px;
-        height: 1px;
-        background: #fff;
-        margin-top: 5px;
-
-        &:nth-child(2){
-          margin-top: 15px;
-          width: 30px;
-        }
-
-        &:nth-child(3){
-          margin-top: 15px;
-          width: 20px;
-        }
-      }
-
-    
- 
+    .header__maincontent--left {
+      width: 50%;
     }
-    .socials{
-      height: 300px;
-      width:100%;
-      
- 
-      a{
-        display:block;
-        transform: rotateZ(-90deg);
-        margin-top: 30px;
-        position: relative;
 
-        &::after{
-          content: attr(data-text);
-          position: absolute;
-          right:50%;
-          top:350%;
-          color:inherit;
-          transform: rotateZ(90deg);
-          background: #000;
-          padding: 4px 16px;
-          transition: all .35s ease-in-out;
+    .header__maincontent--right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-flow: column wrap;
+      // outline: 1px solid red;
 
-          opacity:0;
-        }
-
-        &:hover{
-
-          &::after{
-            opacity:1;
-           top:250%;
-          }
-         
-        }
-  
+      h1 {
+        font-size: 4rem;
+        margin-top: 15%;
       }
 
-    
+      p.text {
+        padding-right: 10%;
+        opacity: 0.8;
 
+        a {
+          text-decoration: underline;
+        }
+      }
     }
   }
-
 }
