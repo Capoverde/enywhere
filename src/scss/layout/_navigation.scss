@@ -1,0 +1,43 @@
+// @use '../abstracts/' as *;
+
+/*
+                    NAVBAR
+==================================================*/
+
+.navbar {
+  width: 100%;
+  padding: 0.1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $nav-bg-c;
+  outline: 1px solid $main-c;
+
+  .logo {
+    margin: 0 auto 0 2em;
+  }
+
+  &__list {
+    display: flex;
+    width: fit-content;
+    margin-right: 2em;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 1em;
+  }
+
+  &__link {
+    overflow: hidden;
+    color: $link-c;
+    @include transition(all, 0.35s, ease-in-out);
+
+    &:hover {
+      color: $link-hvr-c;
+    }
+  }
+}
+
+.navbar__link--active {
+  color: $link-hvr-c;
+}

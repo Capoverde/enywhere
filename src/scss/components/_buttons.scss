@@ -1,0 +1,25 @@
+/*
+                BUTTONS
+===============================================*/
+
+.btn {
+  all: unset;
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid $link-hvr-c;
+  cursor: pointer;
+  padding: 1em 2em;
+  @include transition(all, 0.25s, ease-in-out);
+
+  &:hover {
+    @include scale(0.98);
+  }
+}
+
+.btn--primary {
+  @extend .btn;
+  background: $link-hvr-c;
+}

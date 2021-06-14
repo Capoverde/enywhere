@@ -1,0 +1,36 @@
+/*  ABSTRACTS */
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+@import "./abstracts/placeholders";
+
+/*   BASE   */
+@import "./base/reset";
+@import "./base/typography";
+
+/*  COMPONENTS  */
+@import "./components/buttons";
+@import "./components/cover";
+@import "./components/dropdowns";
+@import "./components/carousels.scss";
+
+/*  LAYOUT  */
+@import "./layout/grid";
+@import "./layout/globals";
+@import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/forms";
+@import "./layout/footer";
+
+/*  PAGES  */
+@import "./pages/home";
+@import "./pages/contact";
+
+/*  THEMES  */
+@import "./themes/theme";
+@import "./themes/admin";
+
+/* VENDORS */
+@import "./vendors/jquery-ui";
+@import "./vendors/material";

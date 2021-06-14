@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+
+  @include respond-below(md) {
+    width: 90%;
+  }
+}
+
+a {
+  @include transition(color, 0.35s, ease-in-out);
+
+  &:hover {
+    color: $link-hvr-c;
+  }
+}
+
+.spacer {
+  padding: 1em 0;
+}
