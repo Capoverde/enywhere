@@ -72,6 +72,14 @@
   }
 }
 
-.navbar__link--active {
-  color: $link-hvr-c;
+
+
+// ========= JS Classes ============= //
+
+.navbar__link--active{
+  color:$link-hvr-c;
+
+  &::after {
+    left: 50%;
+  }
 }
