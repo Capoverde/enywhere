@@ -1,17 +1,11 @@
 console.log('%c Hello from Demo.js', 'color: #bada55; background: #000; padding: 5px 10px; margin: 5px 25px; font-size:2em;')
 
-
-// const activeclass = document.querySelectorAll('.navbar__link--active');
-   
-
-// function activateClass(e) {
-//     var previous = e.target.previousElementSibling;
-//     var next = e.target.nextElementSibling;
-//     e.target.classList.add('navbar__link--active');
-//     previous.classList.remove('navbar__link--active');
-//     next.classList.remove('navbar__link--active');
-// }
-
-
-// activeclass.forEach(link => link.addEventListener('click', activateClass)
+const links = document.getElementsByClassName("navbar__link");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("navbar__link--active");
+  current[0].className = current[0].className.replace(" navbar__link--active", "");
+  this.className += " navbar__link--active";
+  });
+}
 
