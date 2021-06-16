@@ -92,6 +92,10 @@
 
     .box-3{
       flex-basis:20%;
+      background-image: url('/src/images/content/man1.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
     }
     .box-4{
       flex-basis:30%;
